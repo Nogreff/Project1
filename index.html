@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 1</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="shortcut icon" href="#"/>
+    </head>
+    <body>
+        <header>
+            <div class="header_logo">
+                <img src="/assets/img/dcare1.svg">
+            </div>
+            <div>
+                <button class="mobile_toggle" aria-controls="header_menu" aria-expanded="false"></button>
+                <ul class=" ul_format header_menu" data-visible="false">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Insurance</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="header_login ul_format">
+                    <li id="head_login">&phone;&nbsp;&nbsp;678-792-888</li>
+                    <li id="head_sign">Book Appointment</li>
+                </ul>
+            </div>
+        </header>
+        <section class="contact_section">
+            <h1>Contact Us</h1>
+            <p>If you have any question or need help, fill out the form bellow. We will get back to you as soon as possible!</p>
+        </section>
+        <section class="form_about">
+            <form id="contact_form" class="error">
+                <div class="input_status">
+                    <h4>Name</h4>
+                    <input type="text" id="username"/>
+                    <div class="error" ></div>
+                </div>
+                <div class="input_status">
+                    <h4>Email</h4>
+                    <input type="text" id="email"/>
+                    <div class="error"></div>
+                </div>
+ <!--                <div class="input_status">
+                    <h4>Topic</h4>
+                    <select required="" id="topic">
+                        <option value=""></option>
+                        <option>Product Questions</option>
+                        <option>Feedback</option>
+                        <option>Advertising</option>
+                        <option>Busines Inquiries</option>
+                        <option>General Question</option>
+                    </select>
+                    <div class="error"></div>
+                </div> -->
+                <div class="input_status">
+                    <h4>Subject</h4> 
+                    <input type="text" id="subject"/>
+                    <div class="error"></div>
+                </div>
+                <div class="input_status">
+                    <h4>Message</h4>
+                    <textarea id="message"></textarea>
+                    <div class="error"></div>
+                </div>
+                <button type="submit" class="open_modal_form">Submit</button>
+            </form>
+            <dialog class="form_modal" id="form_modal">
+                <div class="modal_wrapper">
+                    <h2>Thanks for contact us!</h2>
+                    <p>We will get back to you as son as possible.</p>
+                    <button class="close_modal_form">Got it</button>
+                </div>             
+            </dialog>
+        </section>
+        <footer>
+            <div class="footer_wrapper">
+                <div class="footer_contact">
+                    <div class="contact_logo">
+                        <img src="/assets/img/dcare2.svg"> 
+                    </div>
+                    <div class="contact_info">
+                        <p>Av. StrongHold 623</p>
+                        <p>Santiago</p>
+                        <p class="footer_number">&phone;&nbsp;&nbsp;678-792-888</p>
+                        <div class="footer_menu">
+                            <img src="/assets/img/facebook.png">
+                            <img src="/assets/img/twitter.png">
+                            <img src="/assets/img/instagram.png">
+                            <img src="/assets/img/youtube.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_info">
+                    <div>
+                        <h1>Hours</h1>
+                        <ul class="ul_format footer_hours">
+                            <li><p class="day">Monday</p><p> 8:00 AM - 6:00PM</p></li>
+                            <li><p class="day">Tuesday</p><p> 8:00 AM - 6:00PM</p></li>
+                            <li><p class="day">Wednesday</p><p> 8:00 AM - 6:00PM</p></li>
+                            <li><p class="day">Thursday</p><p> 8:00 AM - 6:00PM</p></li>
+                            <li><p class="day">Friday</p><p> 8:00 AM - 6:00PM</p></li>
+                            <li><p class="day">saturday</p><p> 8:00 AM - 1:00PM</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script defer src="assets/js/main.js"></script>
+    </body>
+</html>
