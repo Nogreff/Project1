@@ -56,14 +56,8 @@ header{
 .mobile_toggle{
     display: none;
 }
-.mobile_toggle:focus{
-    background: transparent;
-}
 .header_menu>li:hover{
     cursor: pointer;
-}
-.header_menu>li:focus{
-    background: transparent;
 }
 @supports(backdrop-filter: blur(1rem)){
     .header_menu{
@@ -243,7 +237,7 @@ textarea{
     font-size: 1rem;
     letter-spacing: 0.2rem;
 }
-button:hover{
+.open_modal_form:hover,.close_modal_form:hover{
     background-color:#5DB9CC;
     cursor: pointer;
 }
