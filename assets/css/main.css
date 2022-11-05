@@ -5,6 +5,10 @@ body{
     overflow-x: hidden;
 }
 header{
+    display: flex;
+    justify-content: center;
+}
+.header_wrapper{
     max-width: 80rem;
     height: 8rem;
     display: flex;
@@ -12,8 +16,9 @@ header{
     align-items: center;
     margin: 0 auto;
 }
-.header_logo img{
-    width: 15rem;
+.header_logo>img{
+    width: 8rem;
+    margin: 1rem 2rem 1rem 0;
 }
 .ul_format{
     display: flex;
@@ -44,9 +49,21 @@ header{
 .header_menu{
     background: hsl(0 0% 0%/0.75);
     backdrop-filter: blur(1rem);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 .mobile_toggle{
     display: none;
+}
+.mobile_toggle:active{
+    background: transparent;
+}
+.header_menu>li:hover{
+    cursor: pointer;
+}
+.header_menu>li:active{
+    background: transparent;
 }
 @supports(backdrop-filter: blur(1rem)){
     .header_menu{
@@ -59,12 +76,14 @@ header{
     color: black;
     font-weight:600;
 }
-.header_menu li a:hover{
+.header_menu>li>a:hover{
     color: #3f6c7a;
 }
 .header_menu li{
     padding-right: 1.5rem;
 }
+
+
 
 @media (max-width:40rem){
     .header_menu{
@@ -301,7 +320,7 @@ li p{
     cursor: pointer;
 }
 @media(max-width:40rem){
-    header{
+    .header_wrapper{
         flex-direction: column;
         justify-content: start;
         height: 15rem;
@@ -314,9 +333,9 @@ li p{
         width: 100vw;
         border-radius: 0;
     }
-    .header_logo img{
+    .header_logo>img{
         width: 12rem;
-        
+        margin:1rem
     }
     input,textarea{
         width: 18rem;
