@@ -56,13 +56,13 @@ header{
 .mobile_toggle{
     display: none;
 }
-.mobile_toggle:active{
+.mobile_toggle:focus{
     background: transparent;
 }
 .header_menu>li:hover{
     cursor: pointer;
 }
-.header_menu>li:active{
+.header_menu>li:focus{
     background: transparent;
 }
 @supports(backdrop-filter: blur(1rem)){
