@@ -8,7 +8,7 @@ This website was created with the purpose of showcase a form validation. The inp
 ![p1](https://user-images.githubusercontent.com/100097970/216992616-11d0382c-a3db-411c-9242-6540c901a8a1.gif)
 <br></br>
 <br></br>
-## tools used:
-* html
-* css
-* javascript 
+## Tools used:
+* HTML
+* CSS
+* JavaScript 
