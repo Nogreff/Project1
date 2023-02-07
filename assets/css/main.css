@@ -116,19 +116,10 @@ header {
 	.mobile_toggle[aria-expanded='true'] {
 		background: url('/assets/img/close.svg');
 		background-repeat: no-repeat;
+		position: fixed;
 	}
 }
-/* @media (min-width: 35em) and (max-width: 55em) {
-	.header_menu li {
-		display: none;
-	}
-} */
-@media (min-width: 35em) {
-	/*  .header_menu{
-        padding-block: 2rem;
-        padding-inline: clamp(3rem,10vw,10rem);
-    } */
-}
+
 #head_sign {
 	transition: background-color 300ms ease;
 	width: 11rem;
